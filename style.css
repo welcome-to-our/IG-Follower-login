@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #b52c88 0%, #8e3ca0 48%, #7346b3 100%);
+  color: #fff;
+}
+
+.login-card {
+  width: min(360px, 90vw);
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 24px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 31px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+form {
+  display: grid;
+  gap: 8px;
+}
+
+input {
+  width: 100%;
+  height: 42px;
+  padding: 0 12px;
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 4px;
+  outline: none;
+  background: rgba(255,255,255,.12);
+  color: #fff;
+  font-size: 13px;
+}
+
+input::placeholder {
+  color: rgba(255,255,255,.72);
+}
+
+input:focus {
+  border-color: rgba(255,255,255,.55);
+  background: rgba(255,255,255,.16);
+}
+
+button {
+  height: 42px;
+  border: 1px solid rgba(255,255,255,.38);
+  border-radius: 4px;
+  background: rgba(255,255,255,.08);
+  color: rgba(255,255,255,.6);
+  cursor: pointer;
+  font-size: 13px;
+}
+
+form button {
+  margin-top: 2px;
+}
+
+button:hover {
+  background: rgba(255,255,255,.14);
+}
+
+.message {
+  min-height: 18px;
+  margin: 9px 0 0;
+  font-size: 12px;
+  color: #fff;
+}
+
+.forgot {
+  margin: 4px 0 55px;
+  font-size: 11px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  color: rgba(255,255,255,.8);
+  font-size: 10px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: rgba(255,255,255,.28);
+}
+
+.facebook {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: #fff;
+}
+
+.facebook-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  border-radius: 2px;
+  background: #fff;
+  color: #7c3fa9;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+}
+
+footer {
+  margin-top: 30px;
+  padding-top: 13px;
+  border-top: 1px solid rgba(255,255,255,.2);
+  font-size: 11px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    width: min(330px, 88vw);
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
