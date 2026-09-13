@@ -23,12 +23,20 @@ body {
 }
 
 h1 {
-  margin: 0 0 24px;
+  margin: 0 0 2px;
   font-family: Georgia, "Times New Roman", serif;
   font-style: italic;
   font-size: 31px;
   font-weight: 700;
   letter-spacing: -1px;
+}
+
+.demo-label {
+  margin-bottom: 24px;
+  color: rgba(255,255,255,.8);
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 22px;
 }
 
 form {
@@ -114,33 +122,8 @@ a:hover {
   background: rgba(255,255,255,.28);
 }
 
-.facebook {
-  width: 100%;
-  border: 0;
-  background: transparent;
-  color: #fff;
-}
 
-.facebook-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 15px;
-  height: 15px;
-  margin-right: 5px;
-  border-radius: 2px;
-  background: #fff;
-  color: #7c3fa9;
-  font-family: Arial, sans-serif;
-  font-weight: 700;
-}
 
-footer {
-  margin-top: 30px;
-  padding-top: 13px;
-  border-top: 1px solid rgba(255,255,255,.2);
-  font-size: 11px;
-}
 
 .sr-only {
   position: absolute;
